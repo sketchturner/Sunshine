@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="action_refresh">Обновить</string>
+    <string name="action_settings">Настройки</string>
+    <string name="pref_location_label">Местоположение</string>
+    <string name="pref_units_label">Eдиницы измерения температуры</string>
+    <string name="title_activity_detail">Подробности</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="action_map">Показать на карте</string>
+    <string-array name="pref_units_labels">
+        <item>Метрическая</item>
+        <item>Английская</item>
+    </string-array>
+    <string name="error_unable_to_handle_map_intent">Невозможно отобразить местоположение на карте</string>
+    <string name="action_share">Поделиться</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <!-- Windspeed formats -->
+    <!-- Wind in mph [CHAR LIMIT=25] -->
+    <string name="format_wind_mph">
+        Ветер: <xliff:g id="speed">%1$1.0f</xliff:g> миль/ч <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+
+    <!-- Wind in kph [CHAR LIMIT=25] -->
+    <string name="format_wind_kmh">
+        Ветер: <xliff:g id="speed">%1$1.0f</xliff:g> км/ч <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+
+    <!-- Pressure format CHAR LIMIT=25] -->
+    <string name="format_pressure">Давление: <xliff:g id="pressure">%1.0f</xliff:g> гПа</string>
+
+    <!-- Humidity format CHAR LIMIT=25]-->
+    <string name="format_humidity">Влажность: <xliff:g id="humidity">%1.0f</xliff:g> %%</string>
+
+    <!-- Share format [CHAR LIMIT=NONE]-->
+    <string name="format_share">
+        Погода на <xliff:g id="date">%1$s</xliff:g> в <xliff:g id="location">%2$s</xliff:g>:
+        Максимальная температура <xliff:g id="high">%3$s</xliff:g>, минимальная
+        <xliff:g id="low">%4$s</xliff:g></string>
+</resources>

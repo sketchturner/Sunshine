@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ForecastListStyle">ForecastListStyle
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="ListItemStyle">
+        <item name="android:background">@drawable/touch_selector</item>
+    </style>
+</resources>
