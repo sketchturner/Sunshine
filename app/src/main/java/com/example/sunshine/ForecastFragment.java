@@ -15,11 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.sunshine.data.WeatherContract;
 import com.example.sunshine.data.WeatherContract.LocationEntry;
 import com.example.sunshine.data.WeatherContract.WeatherEntry;
+import com.example.sunshine.sync.SunshineSyncAdapter;
 
 import java.util.Date;
 
@@ -105,8 +105,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     }
 
     private void updateWeather() {
-        String location = Utility.getPreferredLocation(getActivity());
-        new FetchWeatherTask(getActivity()).execute(location);
+        SunshineSyncAdapter.syncImmediately(getActivity());
     }
 
     @Override

@@ -61,6 +61,6 @@
     <string name="pref_last_sync" translatable="false">last_sync</string>
 
     <!-- SyncAdapter related -->
-    <string name="sync_account_type" translatable="false">example.com</string>
-    <string name="sync_authority" translatable="false">"com.example.sunshine"</string>
+    <string name="sync_account_type" translatable="false">sunshine.example.com</string>
+    <string name="content_authority" translatable="false">"com.example.sunshine"</string>
 </resources>

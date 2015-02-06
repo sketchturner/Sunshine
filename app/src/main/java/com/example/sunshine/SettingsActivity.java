@@ -10,6 +10,7 @@ import android.preference.PreferenceFragment;
 import android.support.annotation.Nullable;
 
 import com.example.sunshine.data.WeatherContract;
+import com.example.sunshine.sync.SunshineSyncAdapter;
 
 public class SettingsActivity extends Activity {
     /**
@@ -62,8 +63,7 @@ public class SettingsActivity extends Activity {
         @Override
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
             if (key.equals(getString(R.string.pref_location_key))) {
-                String location = sharedPreferences.getString(key, getString(R.string.pref_location_default));
-                new FetchWeatherTask(getActivity()).execute(location);
+                SunshineSyncAdapter.syncImmediately(getActivity());
             } else {
                 getActivity().getContentResolver().notifyChange(WeatherContract.WeatherEntry.CONTENT_URI, null);
             }
