@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_vertical"
-        android:layout_gravity="start"
+        android:layout_gravity="center_horizontal"
         android:padding="16dp">
 
         <!-- Header: Day, Date -->
@@ -37,8 +37,9 @@
             android:baselineAligned="false">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="start"
                 android:layout_marginLeft="16dp">
@@ -61,8 +62,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:orientation="vertical">

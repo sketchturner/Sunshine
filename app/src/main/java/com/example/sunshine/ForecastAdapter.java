@@ -80,6 +80,7 @@ public class ForecastAdapter extends CursorAdapter {
 
         String descString = cursor.getString(ForecastFragment.COL_WEATHER_DESC);
         holder.descView.setText(descString);
+        holder.iconView.setContentDescription(descString);
 
         boolean isMetric = Utility.isMetric(context);
 

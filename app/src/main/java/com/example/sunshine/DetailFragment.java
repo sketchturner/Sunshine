@@ -172,9 +172,9 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
             mDateView.setText(dateText);
 
             // Read description from cursor and update view
-            String description = data.getString(data.getColumnIndex(
-                    WeatherEntry.COLUMN_SHORT_DESC));
+            String description = data.getString(data.getColumnIndex(WeatherEntry.COLUMN_SHORT_DESC));
             mDescriptionView.setText(description);
+            mIconView.setContentDescription(description);
 
             // Read high temperature from cursor and update view
             boolean isMetric = Utility.isMetric(getActivity());
